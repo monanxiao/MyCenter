@@ -20,4 +20,7 @@ use Illuminate\Support\Facades\Route;
 // 首页
 // Route::get('/','StaticPagesController@home')->name('home');
 
+// 首页测试
+Route::get('/', 'PagesController@home')->name('home');
+
 

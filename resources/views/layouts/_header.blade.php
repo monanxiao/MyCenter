@@ -1,21 +1,25 @@
-<header id="main-header">
-    <div class="clearfix">
-        <div class="float-left">
-            <a href="index.html" class="clearfix" id="main-link">
-            <div class="float-left">
-                <i class="lni lni-user"></i>
-            </div>
-            <div class="float-left">
-                <div id="my-name" class="overflow-h-ellipsis">{{ env('APP_NAME') }}</div>
-            </div>
-            </a>
-        </div>
-        <div class="float-right">
-            <span id="video-btn" class="know-more-section-btn">
-                <span class="pointer">
-                    <i class="lni lni-menu"></i>
-                </span>
-            </span>
-        </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-static-top">
+  <div class="container">
+    <!-- Branding Image -->
+    <a class="navbar-brand " href="{{ url('/') }}">
+      MyCenter
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Left Side Of Navbar -->
+      <ul class="navbar-nav mr-auto">
+
+      </ul>
+
+      <!-- Right Side Of Navbar -->
+      <ul class="navbar-nav navbar-right">
+        <!-- Authentication Links -->
+        <li class="nav-item"><a class="nav-link" href="#">登录</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">注册</a></li>
+      </ul>
     </div>
-</header>
+  </div>
+</nav>
