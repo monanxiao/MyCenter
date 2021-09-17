@@ -16154,6 +16154,11 @@ body {
   margin-bottom: 60px;
 }
 
+.logo {
+  width: 85px;
+  height: 30px;
+}
+
 .footer {
   position: absolute;
   bottom: 0;
