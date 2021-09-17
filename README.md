@@ -34,38 +34,18 @@ About MyCenter 意为《个人中心》 或 《个人主页》，为个人而打
 
 如有安装问题，可进群咨询：<a href="https://qm.qq.com/cgi-bin/qm/qr?k=FQfN38Is1Jsk1qIQKxnvb-A0xCaJuQLx&jump_from=webapi">【MyCenter】-草根站长①：145439629</a>
 
-## Laravel Sponsors
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+## 注
 
-### Premium Partners
+欢迎各位草根站长使用，希望您提出宝贵的意见进行反馈，我将会予以改进。
+<a href="https://qm.qq.com/cgi-bin/qm/qr?k=FQfN38Is1Jsk1qIQKxnvb-A0xCaJuQLx&jump_from=webapi">【MyCenter】-草根站长①：145439629</a>
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[CMS Max](https://www.cmsmax.com/)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
 
-## Contributing
+## 提供服务
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+策划、设计、开发（PHP/Java）、App 开发、服务器维护等服务。
 
-## Code of Conduct
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## 联系作者
 
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Email：<a href="Mailto:monanxiao@qq.com">monanxiao@qq.com</a>
