@@ -42,7 +42,7 @@ MyCenter 意为《个人中心》 或 《个人主页》，为个人而打造的
 
 ## 注
 
-欢迎各位草根站长使用，希望您提出宝贵的意见进行反馈，我将会予以改进。
+欢迎各位草根站长使用，希望您提出宝贵的意见进行反馈，我将会予以改进。<br/>
 反馈群：<a href="https://qm.qq.com/cgi-bin/qm/qr?k=FQfN38Is1Jsk1qIQKxnvb-A0xCaJuQLx&jump_from=webapi">【MyCenter】-草根站长①：145439629</a>
 
 
