@@ -21,14 +21,18 @@
 
 ## About MyCenter
 
-About MyCenter 意为：个人中心；为个人而打造的技能服务平台，About MyCenter的目标是帮助个人通过互联网推广、运营自身的价值，让自己的技能服务于他人，提升个人的收益、项目经验等。
+About MyCenter 意为《个人中心》 或 《个人主页》，为个人而打造的技能服务平台，About MyCenter的目标是帮助个人通过互联网推广、运营自身的价值，让自己的技能服务于他人，提升个人的收益、项目经验等。
 
 
-## Learning Laravel
+## 安装方法
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- 服务器系统(推荐)：Ubuntu
+- PHP 7.4.10+
+- Mysql 5.7+
+- Redis
+- Composer
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+如有安装问题，可进群咨询：<a href="https://qm.qq.com/cgi-bin/qm/qr?k=FQfN38Is1Jsk1qIQKxnvb-A0xCaJuQLx&jump_from=webapi">【MyCenter】-草根站长①：145439629</a>
 
 ## Laravel Sponsors
 
