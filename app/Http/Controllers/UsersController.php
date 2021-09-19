@@ -40,7 +40,7 @@ class UsersController extends Controller
         // 验证图片是否存在
         if ($request->avatar) {
             // 图片上传
-            $result = $uploader->save($request->avatar, 'avatars', $user->id);
+            $result = $uploader->save($request->avatar, 'avatars', $user->id, 416);
             if ($result) {
                 // 返回图片路径
                 $data['avatar'] = $result['path'];

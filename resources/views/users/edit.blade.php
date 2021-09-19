@@ -8,7 +8,7 @@
     <div class="card">
       <div class="card-header">
         <h4>
-          <i class="glyphicon glyphicon-edit"></i> 编辑个人资料
+          <i class="glyphicon glyphicon-edit"></i> 编辑资料
         </h4>
       </div>
 
@@ -21,7 +21,7 @@
           @include('shared._error')
 
           <div class="form-group mb-4">
-            <label for="avatar-field" class="avatar-label">用户头像</label>
+            <label for="avatar-field" class="avatar-label">更换头像</label>
             <input type="file" name="avatar" id='avatar-field' class="form-control-file">
 
             @if($user->avatar)
