@@ -50,6 +50,6 @@ class UsersController extends Controller
         // 更新用户数据
         $user->update($data);
 
-        return redirect()->route('users.show',$user->id)->with('success', '资料修改成功！');
+        return redirect()->route('mycenter.show',$user->id)->with('success', '资料修改成功！');
     }
 }

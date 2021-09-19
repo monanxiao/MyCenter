@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use App\Observers\UserObserver;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -24,5 +25,6 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //
+        \App\Models\User::observe(UserObserver::class);// 用户观察器
     }
 }
