@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateLinksTable extends Migration
+class CreateProductionCategoriesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,11 @@ class CreateLinksTable extends Migration
      */
     public function up()
     {
-        Schema::create('links', function (Blueprint $table) {
+        Schema::create('production_categories', function (Blueprint $table) {
             $table->id();
-            $table->text('description')->comment('描述');
-            $table->string('link',150)->comment('外链');
-            $table->string('logo_img')->nullable()->comment('LOGO图片');
+            $table->string('name')->index()->comment('名称');
+            $table->text('description')->nullable()->comment('描述');
+            $table->integer('post_count')->default(0)->comment('作品数量');
             $table->foreignId('user_id')->constrained()->onDelete('cascade')->comment('用户ID');
             $table->timestamps();
         });
@@ -30,6 +30,6 @@ class CreateLinksTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('links');
+        Schema::dropIfExists('production_categories');
     }
 }

@@ -15,16 +15,16 @@
         <div id="my-photo">
             <img src="{{ $user->avatar }}" alt="{{ $user->realname }}">
         </div>
-        <div id="intro-line"> {{ $user->realname }} </div>
+        <div id="intro-line"> {{ $user->realname ?? $user->name }} </div>
         <div id="intro-secondary-line"> {{ $user->occupation }} </div>
-        <p id="about-me-lines"> {{ $user->introduction }} </p>
+        <p id="about-me-lines"> {{ $user->introduction ?? '暂无介绍~' }} </p>
         {{-- <div id="doc-link">
             <a href="#" download>
                 <i class="lni lni-download"></i>
                 <span>下载简历</span>
             </a>
         </div> --}}
-        @if($user->fredom)
+        @if($user->fredom && $user->realname)
           <div id="freelance">
               <span>我可以从事自由职业。 <a href="#contact">联系我</a></span>
           </div>

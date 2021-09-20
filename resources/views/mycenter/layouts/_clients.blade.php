@@ -18,21 +18,24 @@
         <div id="clients-section-heading">友情链接/合作伙伴</div>
         <div class="clearfix" id="clients-body">
 
-          @foreach($links as $lv)
+          @if(count($links))
+            @foreach($links as $lv)
 
-            <div class="float-left client">
-              <a href="{{ $lv->link }}" target="_blank" class="client-logo">
-                @if($lv->logo_img)
-                  <img src="{{ $lv->logo_img }}" alt="{{ $lv->description }}">
-                @else
-                  <span>{{ $lv->description }}</span>
-                @endif
-                <div class="client-display-link">{{ $lv->description }}</div>
-              </a>
-            </div>
+              <div class="float-left client">
+                <a href="{{ $lv->link }}" target="_blank" class="client-logo">
+                  @if($lv->logo_img)
+                    <img src="{{ $lv->logo_img }}" alt="{{ $lv->description }}">
+                  @else
+                    <span>{{ $lv->description }}</span>
+                  @endif
+                  <div class="client-display-link">{{ $lv->description }}</div>
+                </a>
+              </div>
 
-          @endforeach
-
+            @endforeach
+          @else
+            <p id="about-me-lines"> 暂无数据~ </p>
+          @endif
         </div>
       </div>
     </div>

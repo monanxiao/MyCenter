@@ -15,27 +15,33 @@
   <div class="window-body backdrop" data-simplebar>
     <div class="window-content">
       <div id="portfolio-tabs">
+
         <div class="portfolio-tab active" data-filter="*">全部</div>
-        <div class="portfolio-tab" data-filter=".portfolio-creative">分类2</div>
-        <div class="portfolio-tab" data-filter=".portfolio-design">分类3</div>
-        <div class="portfolio-tab" data-filter=".portfolio-minimal">分类4</div></div>
+        @foreach($productioncategories as $cv)
+          <div class="portfolio-tab" data-filter=".portfolio-{{ $cv->id }}">{{ $cv->name }}</div>
+        @endforeach
+        {{-- <div class="portfolio-tab" data-filter=".portfolio-design">分类3</div>
+        <div class="portfolio-tab" data-filter=".portfolio-minimal">分类4</div> --}}
+
+      </div>
+
       <div id="portfolio-content">
         <div class="clearfix" id="portfolio-body">
-          <div class="float-left portfolio-item portfolio-design portfolio-minimal">
+          <div class="float-left portfolio-item portfolio-1 portfolio-minimal">
             <a href="https://www.thewebcross.com" target="_blank">
               <img src="/img/portfolio/p-1.jpg" alt="Portfolio item">
               <div class="portfolio-item-title">
                 <span class="gradient-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></div>
             </a>
           </div>
-          <div class="float-left portfolio-item portfolio-creative portfolio-design">
+          <div class="float-left portfolio-item portfolio-creative portfolio-1">
             <a href="https://www.thewebcross.com" target="_blank">
               <img src="/img/portfolio/p-2.jpg" alt="Portfolio item">
               <div class="portfolio-item-title">
                 <span class="gradient-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></div>
             </a>
           </div>
-          <div class="float-left portfolio-item portfolio-creative portfolio-design">
+          <div class="float-left portfolio-item portfolio-creative portfolio-2">
             <a href="https://www.thewebcross.com" target="_blank">
               <img src="/img/portfolio/p-3.jpg" alt="Portfolio item">
               <div class="portfolio-item-title">

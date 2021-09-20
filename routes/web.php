@@ -56,3 +56,6 @@ Route::get('mycenter/{user:name}/{slug?}', 'MyCentersController@show')
 
 // 友链
 Route::resource('links', LinksController::class);
+
+// 作品分类管理
+Route::resource('productioncategories', ProductionCategoriesController::class);
