@@ -46,4 +46,10 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    // 用户拥有的友联
+    public function links(){
+
+        return $this->hasMany(Link::class);
+    }
 }

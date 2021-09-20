@@ -53,3 +53,6 @@ Route::resource('users', UsersController::class);
 // 用户主页
 Route::get('mycenter/{user:name}/{slug?}', 'MyCentersController@show')
     ->name('mycenter.show');
+
+// 友链
+Route::resource('links', LinksController::class);

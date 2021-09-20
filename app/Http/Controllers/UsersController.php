@@ -20,9 +20,9 @@ class UsersController extends Controller
     }
 
     // 用户数据
-    public function show()
+    public function show(User $user)
     {
-
+        return view('users.show', compact('user'));
     }
 
     // 资料编辑页面
