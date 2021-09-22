@@ -62,3 +62,6 @@ Route::resource('productioncategories', ProductionCategoriesController::class);
 
 // 作品内容发布
 Route::resource('productioncontent', ProductionContentController::class);
+
+// 发布服务
+Route::resource('services', ServicesController::class);

@@ -6,15 +6,15 @@
 
 <div class="list-group">
 
-    @if (count($productioncontents))
-        @foreach ($productioncontents as $lv)
+    @if (count($user->serveices))
+        @foreach ($user->serveices as $lv)
 
-          <a href="{{ $lv->name }}" target="_blank" class="list-group-item list-group-item-action">
+          <a href="#" target="_blank" class="list-group-item list-group-item-action">
             <div class="d-flex w-100 justify-content-between">
-              <h5 class="mb-1">{{ $lv->description }}</h5>
+              <h5 class="mb-1">{{ $lv->describe }}</h5>
               <small>发布时间 {{ $lv->created_at->diffForHumans() }}</small>
             </div>
-            <p class="mb-1">{{ $lv->name }}</p>
+            <p class="mb-1">{{ $lv->title }}</p>
             <small>更新于 {{ $lv->updated_at->diffForHumans() }}</small>
           </a>
 

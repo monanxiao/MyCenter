@@ -64,4 +64,10 @@ class User extends Authenticatable
     {
         return $this->hasMany(ProductionContent::class);
     }
+
+    // 用户拥有的服务项目
+    public function serveices()
+    {
+        return $this->hasMany(Service::class);
+    }
 }

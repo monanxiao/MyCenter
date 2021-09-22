@@ -10,7 +10,7 @@
 
     @include('mycenter.layouts._experience')
 
-    @include('mycenter.layouts._services')
+    @include('mycenter.layouts._services', ['serveices' => $user->serveices])
 
     @include('mycenter.layouts._blog')
 
