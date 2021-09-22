@@ -8,4 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class ProductionContent extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'name',
+        'link',
+        'describe',
+        'thumbnail',
+        'production_categorie_id'
+    ];
 }

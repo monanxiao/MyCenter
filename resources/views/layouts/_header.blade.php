@@ -32,6 +32,7 @@
               <a class="dropdown-item" href="{{ route('users.edit', Auth::id()) }}">编辑资料</a>
               <a class="dropdown-item" href="{{ route('links.create') }}">友链增加</a>
               <a class="dropdown-item" href="{{ route('productioncategories.create') }}">作品分类增加</a>
+              <a class="dropdown-item" href="{{ route('productioncontent.create') }}">作品内容发布</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" id="logout" href="#">
                   <form action="{{ route('logout') }}" method="POST">

@@ -58,4 +58,10 @@ class User extends Authenticatable
     {
         return $this->hasMany(ProductionCategory::class);
     }
+
+    // 用户拥有的作品内容
+    public function productioncontents()
+    {
+        return $this->hasMany(ProductionContent::class);
+    }
 }

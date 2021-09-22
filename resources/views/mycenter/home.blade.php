@@ -14,7 +14,7 @@
 
     @include('mycenter.layouts._blog')
 
-    @include('mycenter.layouts._portfolio', ['productioncategories' => $user->productioncategories])
+    @include('mycenter.layouts._portfolio', ['productioncategories' => $user->productioncategories, 'productioncontent' => $user->productioncontents])
 
     @include('mycenter.layouts._clients', ['links' => $user->links])
 

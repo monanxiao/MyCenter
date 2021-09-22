@@ -59,3 +59,6 @@ Route::resource('links', LinksController::class);
 
 // 作品分类管理
 Route::resource('productioncategories', ProductionCategoriesController::class);
+
+// 作品内容发布
+Route::resource('productioncontent', ProductionContentController::class);
