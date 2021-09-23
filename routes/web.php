@@ -47,15 +47,17 @@ Route::get('email/verify', 'Auth\VerificationController@show')->name('verificati
 Route::get('email/verify/{id}/{hash}', 'Auth\VerificationController@verify')->name('verification.verify');
 Route::post('email/resend', 'Auth\VerificationController@resend')->name('verification.resend');
 
-// 用户资源路由
-Route::resource('users', UsersController::class);
-
-// 用户资料完善提醒
-Route::get('users/mycenter/perfect', 'UsersController@perfect')->name('users.mycenterperfect');
 
 // 用户主页
 Route::get('mycenter/{user:name}/{slug?}', 'MyCentersController@show')
     ->name('mycenter.show');
+
+// 用户资源路由
+Route::resource('users', UsersController::class);
+
+// 用户资料完善提醒
+Route::get('users/mycenter/perfect', 'UsersController@perfect')
+    ->name('users.mycenterperfect');
 
 // 友链
 Route::resource('links', LinksController::class);

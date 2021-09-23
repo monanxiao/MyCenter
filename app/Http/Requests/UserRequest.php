@@ -15,9 +15,9 @@ class UserRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|between:2,25|regex:/\p{Han}/u|unique:users,name,' . Auth::id(),
+            'name' => 'required|between:3,25|regex:/\p{Han}/u/|unique:users,name,' . Auth::id(),
             'email' => 'required|email',
-            'introduction' => 'required|max:300',
+            'introduction' => 'nullable|max:300',
             'realname' => 'required|regex:/\p{Han}/u|between:2,5',
             'occupation' => 'nullable|string|max:30',
             'fredom' => 'boolean',

@@ -24,7 +24,7 @@ class MyCenterPerfect
             is_null($user->realname) && // 假如用户名为空
             is_null($user->occupation) && // 假如职位为空
             is_null($user->introduction) && // 假如简介为空
-            ! $request->is('users/mycenter/perfect', 'logout', "users/*")
+            ! $request->is('users/mycenter/perfect', 'logout', "users/*", 'email/*')
         ){
 
             // 根据客户端返回对应的内容
