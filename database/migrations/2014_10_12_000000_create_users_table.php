@@ -15,11 +15,19 @@ class CreateUsersTable extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->rememberToken();
+            $table->string('name', 30)->comment('昵称');
+            $table->string('email')->unique()->index()->comment('邮箱');
+            $table->string('avatar')->comment('头像');
+            $table->text('introduction')->nullable()->comment('简介');
+            $table->string('realname', 5)->nullable()->index()->comment('真实姓名');
+            $table->string('occupation', 30)->nullable()->index()->comment('职位');
+            $table->string('slug',30)->comment('主页后缀');
+            $table->string('domain', 120)->nullable()->comment('自定义域名');
+            $table->text('excerpt')->nullable()->comment('简介摘录');
+            $table->boolean('fredom')->default(true)->comment('自由职业 true 接受 false 不接受');
+            $table->timestamp('email_verified_at')->nullable()->comment('邮箱认证时间');
+            $table->string('password')->comment('密码');
+            $table->rememberToken()->comment('记住我 token');
             $table->timestamps();
         });
     }
