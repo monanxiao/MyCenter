@@ -52,4 +52,19 @@ class UsersController extends Controller
 
         return redirect()->route('mycenter.show',$user->name)->with('success', '资料修改成功！');
     }
+
+    // 完善资料提醒
+    public function perfect()
+    {
+        $user = Auth::user();// 当前登录用户
+
+        if ( ! is_null($user->realname) && // 假如用户名不为空
+             ! is_null($user->occupation) && // 假如职位不为空
+             ! is_null($user->introduction)) // 假如简介不为空
+        {
+            return redirect()->route('users.show', Auth::id())->with('资料已完善！');
+        }
+
+        return view('users.mycenter_perfect');
+    }
 }

@@ -50,6 +50,9 @@ Route::post('email/resend', 'Auth\VerificationController@resend')->name('verific
 // 用户资源路由
 Route::resource('users', UsersController::class);
 
+// 用户资料完善提醒
+Route::get('users/mycenter/perfect', 'UsersController@perfect')->name('users.mycenterperfect');
+
 // 用户主页
 Route::get('mycenter/{user:name}/{slug?}', 'MyCentersController@show')
     ->name('mycenter.show');
