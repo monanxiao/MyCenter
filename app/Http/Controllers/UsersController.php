@@ -10,13 +10,16 @@ use App\Handlers\ImageUploadHandler;
 
 class UsersController extends Controller
 {
+    // 中间件
+    public function __construct()
+    {
+        $this->middleware('auth', ['except' => ['index', 'show']]);
+    }
+
     // 用户首页
     public function index()
     {
-        // 当前登录用户
-        $user = Auth::user();
-
-        return view('users.home', compact('user'));
+        return view('users.home');
     }
 
     // 用户数据
@@ -28,12 +31,18 @@ class UsersController extends Controller
     // 资料编辑页面
     public function edit(User $user)
     {
+        // 授权策略 验证是否有权限
+        $this->authorize('edit', $user);
+
         return view('users.edit', compact('user'));
     }
 
     // 接收资料更新数据
     public function update(UserRequest $request, ImageUploadHandler $uploader, User $user)
     {
+        // 授权策略 验证是否有权限
+        $this->authorize('update', $user);
+
         // 获取所有提交数据
         $data = $request->all();
 
