@@ -9,6 +9,12 @@ use Auth;
 
 class ProductionCategoriesController extends Controller
 {
+    // 页面授权策略
+    public function __construct()
+    {
+        $this->middleware('auth');// 登录可见
+    }
+
     // 作品分类列表
     public function index()
     {
