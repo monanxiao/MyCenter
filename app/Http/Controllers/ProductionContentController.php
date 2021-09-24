@@ -11,6 +11,12 @@ use App\Handlers\ImageUploadHandler;
 
 class ProductionContentController extends Controller
 {
+    // 页面授权策略
+    public function __construct()
+    {
+        $this->middleware('auth');// 登录可见
+    }
+
     // 作品列表
     public function index()
     {

@@ -6,8 +6,8 @@
 
 <div class="list-group">
 
-    @if (count($productioncontents))
-        @foreach ($productioncontents as $lv)
+    @if (count($user->productioncontents))
+        @foreach ($user->productioncontents as $lv)
 
           <a href="{{ $lv->name }}" target="_blank" class="list-group-item list-group-item-action">
             <div class="d-flex w-100 justify-content-between">
