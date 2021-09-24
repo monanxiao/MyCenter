@@ -9,6 +9,12 @@ use App\Models\Service;
 
 class ServicesController extends Controller
 {
+    // 页面授权策略
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     // 服务项目列表
     public function index()
     {
