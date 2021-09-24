@@ -10,6 +10,11 @@ use Auth;
 
 class LinksController extends Controller
 {
+    // 页面授权策略
+    public function __construct()
+    {
+        $this->middleware('auth');// 登录用户可见
+    }
 
     // 创建页
     public function create()

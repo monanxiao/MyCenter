@@ -15,10 +15,10 @@ class UserRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|between:3,25|regex:/\p{Han}/u/|unique:users,name,' . Auth::id(),
+            'name' => 'required|string|between:3,25|unique:users,name,' . Auth::id(),
             'email' => 'required|email',
             'introduction' => 'nullable|max:300',
-            'realname' => 'required|regex:/\p{Han}/u|between:2,5',
+            'realname' => 'required|string|between:2,5',
             'occupation' => 'nullable|string|max:30',
             'fredom' => 'boolean',
             'avatar' => 'mimes:png,jpg,gif,jpeg|dimensions:min_width=208,min_height=208'

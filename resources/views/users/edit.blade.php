@@ -15,8 +15,9 @@
       <div class="card-body">
 
         <form action="{{ route('users.update', $user->id) }}" method="POST" accept-charset="UTF-8" enctype="multipart/form-data">
-          <input type="hidden" name="_method" value="PUT">
-          <input type="hidden" name="_token" value="{{ csrf_token() }}">
+
+          {{ csrf_field() }}
+          @method('PUT')
 
           @include('shared._error')
 
