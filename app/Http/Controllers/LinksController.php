@@ -32,7 +32,8 @@ class LinksController extends Controller
         if ($request->logo_img) {
 
              // 图片上传
-            $result = $uploader->save($request->logo_img, 'logo_img', Auth::id(), 416);
+            // $result = $uploader->save($request->logo_img, 'logo_img', Auth::id(), 416);
+            $result = $uploader->save($request->logo_img, 'logo_img', Auth::id());
             if ($result) {
                 // 返回图片路径
                 $links->logo_img = $result['path'];
